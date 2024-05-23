@@ -1,8 +1,9 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Hello, I would like to introduce my new project; Currency App,
+I created this project with React.
+I used FreeCurrency API for live exchange rates, you can check the api in https://freecurrencyapi.com/,
+and for documents; https://freecurrencyapi.com/docs,
+and I also used axios for api calls.
+This project can convert USD-EUR-TRY to TRY-USD-EUR,
+I can add more but 3 was enough for learn how to use that api.
+Here is the screenshot of my project. Thanks for reading.
+![Ekran görüntüsü 2024-05-24 003345](https://github.com/doganakbaba/Currency_App/assets/127808421/ea126ab9-3101-4cbc-9765-4e082fde43e5)
