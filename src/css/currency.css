@@ -1,0 +1,60 @@
+.currency-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 200px;
+    width: 550px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(1px);
+    box-shadow: 0 4px 8px 0 rgb(96, 120, 82), 0 6px 20px 0 rgb(142,150,107);
+    
+    
+    
+}
+
+.amount{
+    width: 80px;
+    height: 25px;
+    margin-right:10px ;
+}
+
+.result{
+    width: 80px;
+    height: 25px;
+    
+}
+
+.from-currency-option{
+    width: 70px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.to-currency-option{
+    width: 70px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.exchange-button{
+    width: 80px ;
+    height: 30px;
+    background-color:rgb(96, 120, 82);
+    
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 15px;
+}
