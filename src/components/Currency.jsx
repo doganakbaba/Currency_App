@@ -10,19 +10,21 @@ let API_KEY = "fca_live_ByRhu87SnWUEdXvYRjdAIPwsowEn71hOn1nzgJgM";
 
 
 function Currency() {
-
-  const [amount, setAmount] = useState();
+  const [amount, setAmount] = useState('');
   const [fromCurrency, setFromCurrency] = useState('USD');
   const [toCurrency, setToCurrency] = useState('TRY');
-  const [result, setResult] = useState();
+  const [result, setResult] = useState('');
 
   const exchange = async () => {
-    // console.log(amount)
-    // console.log(fromCurrency)
-    // console.log(toCurrency)
-
-    const response = await axios.get(`${BASE_URL}?apikey=${API_KEY}&base_currency=${fromCurrency}`);
-    console.log(response.data.data[toCurrency])
+    try {
+      const response = await axios.get(`${BASE_URL}?apikey=${API_KEY}&base_currency=${fromCurrency}`);
+      const rate = response.data.data[toCurrency];
+      const result = (rate * amount).toFixed(2);
+      setResult(result);
+    } catch (error) {
+      console.error("Error fetching the exchange rate:", error);
+      alert("Failed to fetch the exchange rate. Please try again later.");
+    }
   }
 
   return (
@@ -56,7 +58,7 @@ function Currency() {
           <option>USD</option>
           <option>EUR</option>
         </select>
-        <input value={result} onChange={(e) => setResult} type="number" className='result' />
+        <input value={result} onChange={(e) => setResult} readOnly type="number" className='result' />
 
       </div>
       <div>
